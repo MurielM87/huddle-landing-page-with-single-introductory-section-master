@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    color:hsl(0, 0%, 100%);
+    background-position: fixed;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+#card {
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+    margin-bottom: 0px;
+}
+#img_header {
+    display: flex;
+    flex-direction: column;
+}
+#img_logo {
+    width: 200px;
+    margin-bottom: 90px;
+}
+#presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px;
+    margin-top: 170px;
+}
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+button {
+    background-color: hsl(0, 0%, 100%);
+    width: 40%;
+    padding: 10px 5px;
+    border-radius: 20px;
+    margin-top: 50px;
+    box-shadow: 0 5px 5px hsl(257, 46%, 39%);
+}
+button:hover {
+    cursor: pointer;
+    color:hsl(0, 0%, 100%);
+    background-color: hsl(300, 69%, 71%);
+}
+#social_icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-top: 200px;
+}
+.fa-facebook-f,
+.fa-twitter,
+.fa-instagram {
+    color: hsl(0, 0%, 100%);
+    margin-right: 15px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    padding: 10px;
+}
+.fa-facebook-f:hover,
+.fa-twitter:hover,
+.fa-instagram:hover {
+    color: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        background-image: url(./images/bg-mobile.svg);
+        background-repeat: no-repeat;
+    }
+    #card {
+        flex-direction: column;
+        margin: 20px;
+    }
+    #img_header {
+        width: 100%;
+    }
+    #img_logo {
+        width: 150px;
+        margin: 30px 0px 50px;
+    }
+    #presentation {
+        margin: auto;
+        margin-top: 20px;
+        font-size: 16px;
+        text-align: center;
+    }
+    h1 {
+        font-size: 25px;
+        margin-top: 30px;
+    }
+    button {
+        width: 80%;
+        margin: auto;
+        margin-top: 30px;
+    }
+    #social_icons {
+        margin: auto;
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+}
